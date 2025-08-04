@@ -35,11 +35,17 @@ window.onscroll = () => {
 
 
 // skills section //
-  window.addEventListener('scroll', () => {
-    const skills = document.querySelector('.skills-container');
-    const rect = skills.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      skills.classList.add('visible');
+const skillsBox = document.querySelector('.skills-box');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
     }
   });
+}, { threshold: 0.3 });
 
+if (skillsBox) {
+  observer.observe(skillsBox);
+}
