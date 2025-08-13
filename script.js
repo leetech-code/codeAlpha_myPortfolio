@@ -49,3 +49,4 @@ const observer = new IntersectionObserver(entries => {
 if (skillsBox) {
   observer.observe(skillsBox);
 }
+

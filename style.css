@@ -117,6 +117,7 @@ a {
     border: .2rem solid var(--accent-color);
 }
 
+
 /* Components */
 .container {
     max-width: 1200px;
@@ -1184,7 +1185,7 @@ section {
 
 
     .technical {
-        padding-left: 4rem;
+        padding-left: 2rem;
         width: 40rem;
     }
 
@@ -1214,7 +1215,7 @@ section {
     }
 
     .technical {
-        padding-left: 2rem;
+        padding-left: 1.5rem;
         width: 4rem;
     }
 
